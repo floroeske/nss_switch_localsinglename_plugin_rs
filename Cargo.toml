@@ -1,0 +1,17 @@
+[package]
+name = "nss_rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "nss_localsinglename"
+crate-type = ["cdylib"]
+
+[dependencies]
+lazy_static = "1.4.0"
+libnss = "0.4"
+paste = "0.1.18"
+libc = "0.2.144"
+dns-lookup = "2.0.2"
